@@ -66,7 +66,7 @@ func CalcularEsferaArea(raio float32) (float32, error) {
 // FIGURAS PLANAS
 
 // Função para calcular a área do triângulo
-func CalcularAreaTriangulo(base, altura float32) (float32, error) {
+func CalcularTrianguloArea(base, altura float32) (float32, error) {
 	if base <= 0 || altura <= 0 {
         return 0, &AreaError{"Os valores de base e altura devem ser maiores que zero."}
     }
@@ -75,7 +75,7 @@ func CalcularAreaTriangulo(base, altura float32) (float32, error) {
 }
 
 // Função para calcular a área do Retângulo
-func CalcularAreaRetangulo(base, altura float32) (float32, error) {
+func CalcularRetanguloArea(base, altura float32) (float32, error) {
 	if base <= 0 || altura <= 0 {
         return 0, &AreaError{"Os valores de base e altura devem ser maiores que zero."}
 	}
@@ -84,7 +84,7 @@ func CalcularAreaRetangulo(base, altura float32) (float32, error) {
 }
 
 // Função para calcular a área do Quadrado
-func CalcularAreaQuadrado(lado float32) (float32, error) {
+func CalcularQuadradoArea(lado float32) (float32, error) {
 	if lado <= 0 {
         return 0, &AreaError{"O valor do lado deve ser maior que zero."}
     }
@@ -93,7 +93,7 @@ func CalcularAreaQuadrado(lado float32) (float32, error) {
 }
 
 // Função para calcular a área do Círculo
-func CalcularAreaCirculo(raio float32) (float32, error) {
+func CalcularCirculoArea(raio float32) (float32, error) {
 	if raio <= 0 {
         return 0, &AreaError{"O valor do raio deve ser maior que zero."}
     }
